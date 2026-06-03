@@ -10,15 +10,14 @@
 
 ## Estrutura Básica dos Arquivos
 
-#### WIP
-
+#### Os arquivos foram divididos em "public", que são de acesso livre para todos e "infra", que engloba pasta "db", local onde está presente o código para a conexão do banco de dados.
 ## Explicação Geral sobre o Funcionamento do Código
 
-#### WIP
+#### O código tem por finalidade permitir o cadastro e visualização de usuários inseridos através da conexão entre php e html.  
 
 ## Principais Aprendizados
 
-#### WIP
+#### A atividade foi uma breve introdução dos conceitos básicos para a compreensão sobre o banco de dados. Através da explicação do professor, o aluno precisou interpretar o código e adicionar comentários em cima do código criado pelo professor. Através dos comentários, foi possível entender alguns aspectos necessários para a inserção do banco de dados através do PHP, como ligar o código ao banco de dados e visualizar as informações inseridas nele.
 
 
 
