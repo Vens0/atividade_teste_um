@@ -8,7 +8,10 @@
         <th>Senha</th>
     </tr>
 
-    <?php // Início da estrutura do código em PHP
+<!-- Início da estrutura do código em PHP -->
+
+
+    <?php 
     
     $sqlTodosUsuarios = "SELECT * FROM usuarios"; // Puxa as informações que estão inseridas na tabela "usuarios"
 
