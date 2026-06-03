@@ -1,23 +1,23 @@
 <?php
-session_start();
-if(!isset($_SESSION["usuario"])){
-    header("Location: ../index.php");
+session_start(); // Inicia a sessão
+if(!isset($_SESSION["usuario"])){ // Verificará se o usuário está logado, e caso não esteja, o usuário será obrigado a acessar a página de login.
+    header("Location: ../index.php"); 
     exit();
 }
 
 include("../infra/db/connect.php");
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){ // O método POST receberá as informações do usuario e senha e enviará essas informações para as variáveis "$novoUsuario" e "$novaSenha".
     $novoUsuario = $_POST['usuario'];
-    $novaSenha = $_POST['senha'];
+    $novaSenha = $_POST['senha']; 
 
     $sql = "INSERT INTO usuarios (usuario,senha) 
-    VALUES ('$novoUsuario','$novaSenha')";  
+    VALUES ('$novoUsuario','$novaSenha')";  // O "INSERT INTO" será responsável por jogar essas informações na query SQL."
 
-    if($conn->query($sql) === TRUE){
+    if($conn->query($sql) === TRUE){ // Caso a inserção de novo usuário funcione, exibirá uma mensagem de sucesso."
         echo "<script> alert('Usuário cadastrado com sucesso!')</script>";
     }else{
-        echo "<script> alert('Erro ao cadastrar')</script>";
+        echo "<script> alert('Erro ao cadastrar')</script>"; // Caso não funcione, uma mensagem de erro."
     }
 
 };
@@ -36,7 +36,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <hr>
     <h4>Cadastro de Novo Usuário.</h4>
-    <form method="POST">
+    <form method="POST"> <!-- Botão de cadastro de novo usuário utilizando o método POST. O método POST recebe as informações do novo usuário. -->
         <label>Usuário:</label>
         <input type="text" name="usuario">
         <br>
@@ -51,7 +51,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         
         ?>
         <br>
-        <button type="submit">Cadastrar</button>
+        <button type="submit">Cadastrar</button> 
     </form>
     <hr>
     <?php
