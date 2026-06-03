@@ -20,6 +20,19 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ // O método POST receberá as informa
         echo "<script> alert('Erro ao cadastrar')</script>"; // Caso não funcione, uma mensagem de erro."
     }
 
+}
+
+if($_SERVER["REQUEST_METHOD"] == "GET"){ // O método POST receberá as informações do usuario e senha e enviará essas informações para as variáveis "$novoUsuario" e "$novaSenha".
+   $idUsuario = $_GET['id'];
+
+    $sql = "DELETE FROM usuarios WHERE id = '$idUsuario'"; 
+
+    if($conn->query($sql) === TRUE){ // Caso a inserção de novo usuário funcione, exibirá uma mensagem de sucesso."
+        echo "<script> alert('Usuário cadastrado com sucesso!')</script>";
+    }else{
+        echo "<script> alert('Erro ao cadastrar')</script>"; // Caso não funcione, uma mensagem de erro."
+    }
+
 };
 
 ?>
@@ -52,7 +65,21 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ // O método POST receberá as informa
         ?>
         <br>
         <button type="submit">Cadastrar</button> 
+
     </form>
+
+
+
+    <h4> Deletar Usuários. </h4>
+
+     <form method="GET">
+
+     <input type="apagar" name="id">
+
+        <button type="submit"> Digite o ID </button> 
+
+    </form>
+
     <hr>
     <?php
     
