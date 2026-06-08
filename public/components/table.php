@@ -6,6 +6,7 @@
         <th>ID</th>
         <th>Usuário</th>
         <th>Senha</th>
+        <th>Editar</th>
     </tr>
 
 <!-- Início da estrutura do código em PHP -->
@@ -29,6 +30,7 @@
                     <td>". $linha['id'] . "</td>
                     <td>". $linha['usuario'] . "</td>
                     <td>". $linha['senha'] . "</td>
+                    <td> <a href='editar.php?id=". $linha['id'] ."'> Editar</td>
                 </tr>
         ";
 
