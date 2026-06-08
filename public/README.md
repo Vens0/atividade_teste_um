@@ -19,6 +19,8 @@
 
 #### A atividade foi uma breve introdução dos conceitos básicos para a compreensão sobre o banco de dados. Através da explicação do professor, o aluno precisou interpretar o código e adicionar comentários em cima do código criado pelo professor. Através dos comentários, foi possível entender alguns aspectos necessários para a inserção do banco de dados através do PHP, como ligar o código ao banco de dados e visualizar as informações inseridas nele.
 
+# Atividade CRUD 02 - Exclusão e Remoção de Usuários
+
 
 
 

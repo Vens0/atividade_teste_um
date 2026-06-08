@@ -15,15 +15,15 @@ $sql = "SELECT * FROM usuarios WHERE id = $id";
 $resultado = $conn -> query($sql);
 $usuario = $resultado -> fetch_assoc();
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){ 
     $novoUsuario = $_POST["usuario"];
     $novaSenha = $_POST["senha"];
 
-    $sqlUpdate = " UPDATE usuarios SET usuario = '$novoUsuario', senha = '$novaSenha' WHERE id = $id";
+    $sqlUpdate = " UPDATE usuarios SET usuario = '$novoUsuario', senha = '$novaSenha' WHERE id = $id"; // Recebe o valor do novo nome de usuário inserido e troca pelo usuário antigo. Faz a mesma coisa com a senha.
 
     if($conn -> query($sqlUpdate) === TRUE){
         header("Location: home.php");
-        exit();
+        exit(); // Se a ação da variável "$sqlUpdate" for ativa, o usuário logado será enviado de volta para a página home.
     }
 
 
@@ -42,10 +42,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <h2>Editar Usuário</h2>
 <form method="POST">
         <label>Usuário:</label>
-        <input type="text" name="usuario" value =" <?php echo $usuario['usuario'] ?>">
+        <input type="text" name="usuario" value =" <?php echo $usuario['usuario'] ?>"> <!-- Local onde será inserido o novo nome de usuário -->
         <br>
         <label>Senha:</label>
-        <input type="password" name="senha" value =" <?php echo $usuario['senha'] ?>">
+        <input type="password" name="senha" value =" <?php echo $usuario['senha'] ?>"> <!-- Local onde será inserido a nova senha -->
         <br>
         <br>
         <button type="submit">Salvar</button>
