@@ -68,7 +68,12 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){ // O método POST receberá as informa�
 
     </form>
 
+    <hr>
+    <?php
+    
+    include("components/table.php")
 
+    ?>
 
     <h4> Deletar Usuários. </h4>
 
@@ -79,14 +84,6 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){ // O método POST receberá as informa�
         <button type="submit"> Digite o ID </button> 
 
     </form>
-
-    <hr>
-    <?php
-    
-    include("components/table.php")
-
-    ?>
-
 
 
 </body>
