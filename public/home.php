@@ -63,6 +63,8 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){ // O método POST receberá as informa�
             };
         
         ?>
+        <label>Confirmar Senha:</label>
+        <input type="password" name="confirmar">
         <br>
         <button type="submit">Cadastrar</button> 
 
@@ -85,6 +87,8 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){ // O método POST receberá as informa�
 
     </form>
 
+<script src="scripts/confirm.js"></script>
 
 </body>
 </html>
+
