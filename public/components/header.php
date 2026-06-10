@@ -1,7 +1,5 @@
 <?php
 
-include("verify.php");
-
 ?>
 
 <html lang="en">
@@ -17,7 +15,7 @@ include("verify.php");
     
  <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link" href="addusuarios.php">Adicionar Usuários</a>
+    <a class="nav-link" href="./public/addusuarios.php">Adicionar Usuários</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>

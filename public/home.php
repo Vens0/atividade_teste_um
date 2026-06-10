@@ -1,10 +1,12 @@
 <?php
 
+include("public/components/header.php");
+
 include("verify.php");
 
 include("../infra/db/connect.php");
 
-include("public/addusuarios.php")
+include("addusuarios.php")
 
 if($_SERVER["REQUEST_METHOD"] == "GET"){ // O método POST receberá as informações do usuario e senha e enviará essas informações para as variáveis "$novoUsuario" e "$novaSenha".
    $idUsuario = $_GET['id'];

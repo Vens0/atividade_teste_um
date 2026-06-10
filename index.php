@@ -1,4 +1,7 @@
 <?php
+
+include("public/components/header.php");
+
     session_start();
 
     include("infra/db/connect.php");
