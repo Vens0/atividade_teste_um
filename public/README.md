@@ -37,12 +37,20 @@
 
 ##### A principal dificuldade foi descobrir como associar o banco de dados aos arquivos php, entretanto, lembrando dos comandos que estão associados ao banco de dados, foi possível criar uma relação e criar um meio de exclusão de dados.
 
+## Seção adicional
 
+## Como poderia ser implementado
 
+##### O comando de deletar poderia ter sido criado em um arquivo separado, sendo possível trazê-lo através de um INCLUDE.
 
+## Possíveis arquivos modificados
 
+##### O arquivo home.php é uma sugestão de arquivo que poderia ser modificado.
 
+## Lógica para a exclusão
 
+##### No comando "DELETE FROM usuarios WHERE id = '$idUsuario'"", o comando está deletando da tabela "usuarios" os valores id que estiverem associados ao "$idUsuario". Essa variável está recebendo o id que o usuário digitar no input relacionado ao deletar usuários.
 
+## Pesquisas, testes ou tentativas
 
-
+##### As tentativas giraram em torno do comando "DELETE FROM", o principal responsável por deletar as informações relacionadas ao usuário. Entretanto, o erro constante foi descobrir o local onde ele deveria se localizar na linha de comandos.
