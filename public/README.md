@@ -10,16 +10,32 @@
 
 ## Estrutura Básica dos Arquivos
 
-#### Os arquivos foram divididos em "public", que são de acesso livre para todos e "infra", que engloba pasta "db", local onde está presente o código para a conexão do banco de dados.
+##### Os arquivos foram divididos em "public", que são de acesso livre para todos e "infra", que engloba pasta "db", local onde está presente o código para a conexão do banco de dados.
 ## Explicação Geral sobre o Funcionamento do Código
 
-#### O código tem por finalidade permitir o cadastro e visualização de usuários inseridos através da conexão entre php e html.  
+##### O código tem por finalidade permitir o cadastro e visualização de usuários inseridos através da conexão entre php e html.  
 
 ## Principais Aprendizados
 
-#### A atividade foi uma breve introdução dos conceitos básicos para a compreensão sobre o banco de dados. Através da explicação do professor, o aluno precisou interpretar o código e adicionar comentários em cima do código criado pelo professor. Através dos comentários, foi possível entender alguns aspectos necessários para a inserção do banco de dados através do PHP, como ligar o código ao banco de dados e visualizar as informações inseridas nele.
+##### A atividade foi uma breve introdução dos conceitos básicos para a compreensão sobre o banco de dados. Através da explicação do professor, o aluno precisou interpretar o código e adicionar comentários em cima do código criado pelo professor. Através dos comentários, foi possível entender alguns aspectos necessários para a inserção do banco de dados através do PHP, como ligar o código ao banco de dados e visualizar as informações inseridas nele.
 
 # Atividade CRUD 02 - Exclusão e Remoção de Usuários
+
+## Como foi implementado
+
+##### A funcionalidade de exclusão foi implementada através do método "GET". O método "GET" está associado à uma linha de código com o comando "DELETE FROM", que deleta a linha da tabela que esteja associada ao id que o usuário digitar.
+
+## Arquivos
+
+##### Os arquivo que foi alterado nesse processo de exclusão foi a "home.php", local onde se encontra o comando de delete.
+
+## Mensões a trechos
+
+##### O trecho "$sql = "DELETE FROM usuarios WHERE id = '$idUsuario'"" que está localizado na linha 28 do arquivo "home.php" é o principal responsável por receber o id do usuário e deletar todas as informações associadas a ele. Além disso, na linha 80 encontramos o trecho associado ao input de id, local onde é digitado o id que o usuário deseja deletar.
+
+## Dificuldades e soluções
+
+##### A principal dificuldade foi descobrir como associar o banco de dados aos arquivos php, entretanto, lembrando dos comandos que estão associados ao banco de dados, foi possível criar uma relação e criar um meio de exclusão de dados.
 
 
 
