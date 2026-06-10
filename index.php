@@ -29,7 +29,7 @@
     <title>Login</title>
 </head>
 <body>
-    <h1>Sitema de Login Simples</h1>
+    <h1>Sistema de Login Simples</h1>
 
     <form method="POST">
         <label>Usuário:</label>
