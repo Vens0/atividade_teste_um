@@ -1,6 +1,6 @@
 <?php
 
-include("public/components/header.php");
+include("components/header.php");
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){ // O método POST receberá as informações do usuario e senha e enviará essas informações para as variáveis "$novoUsuario" e "$novaSenha".
     $novoUsuario = $_POST['usuario'];
@@ -54,8 +54,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){ // O método POST receberá as informa
 
     <hr>
     <?php
-    
-    include("components/table.php")
 
     ?>
 

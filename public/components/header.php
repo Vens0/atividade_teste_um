@@ -15,7 +15,10 @@
     
  <ul class="nav justify-content-center">
   <li class="nav-item">
-    <a class="nav-link" href="./public/addusuarios.php">Adicionar Usuários</a>
+    <a class="nav-link" href="home.php">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="addusuarios.php">Adicionar Usuários</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">Link</a>
