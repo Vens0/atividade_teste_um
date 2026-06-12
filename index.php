@@ -1,7 +1,5 @@
 <?php
 
-include("public/components/header.php");
-
     session_start();
 
     include("infra/db/connect.php");
@@ -32,7 +30,7 @@ include("public/components/header.php");
     <title>Login</title>
 </head>
 <body>
-    <h1>Sistema de Login Simples</h1>
+    <h1> Login </h1>
 
     <form method="POST">
         <label>Usuário:</label>
